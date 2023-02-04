@@ -36,11 +36,11 @@ const updateUI = (data) => {
 
   darkMode(weather.IsDayTime);
 
-  const iconSrc = `../assets/icons/${weather.WeatherIcon}.svg`;
+  const iconSrc = `assets/icons/${weather.WeatherIcon}.svg`;
   icon.setAttribute('src', iconSrc);
 
   let timeSrc = null;
-  weather.IsDayTime === true ? (timeSrc = '../assets/images/day.svg') : (timeSrc = '../assets/images/night.svg');
+  weather.IsDayTime === true ? (timeSrc = 'assets/images/day.svg') : (timeSrc = 'assets/images/night.svg');
 
   time.setAttribute('src', timeSrc);
 
