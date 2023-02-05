@@ -9,6 +9,7 @@ const getWeather = async (locKey) => {
     headers: {
       'Content-Type': 'text/plain',
     },
+    mode: 'cors',
   });
 
   const data = await response.json();
